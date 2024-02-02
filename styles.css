@@ -1,7 +1,7 @@
 
 :root{
     --baseblue:#08DEFF;
-    --shadeone:#06A7BF;
+    --shadeone:#1857a4;
     --teal:#047B8C;
 }
 html,
@@ -17,7 +17,7 @@ body {
 
 }
 header{
-    background-color: var(--teal);
+    background-color: var(--shadeone);
     color: black;
     padding: 3rem;
     margin-bottom: 1rem;
@@ -58,7 +58,7 @@ footer{
     display:static;
 }
 .navItems:hover{
-    background-color:var(--teal);
+    background-color:var(--shadeone);
     margin-top:-10px;
     transform: scale(1.2);
     margin-left:.5rem;
@@ -68,3 +68,35 @@ footer{
     color:white;
     transition:margin-top .3s, transform .3s, margin-left .3s, margin-right .3s, box-shadow .2s, background-color .2s ease;
 }
+h2{
+    color:var(--baseblue);
+
+}
+p{
+    color:var(--teal);
+}
+#topcontent{
+    margin-top: 110px;
+    
+}
+.content:hover{
+    background-color:var(--shadeone);
+    padding:.3rem;
+    padding-bottom: 1rem;
+    color:white;
+}
+
+.content:hover h2, .content:hover p{
+    color:white;
+}
+
+/* HOVER PARAGRAPHS STYLING*/
+/* span:hover{
+    background-color: var(--teal);
+    
+    padding-top: .5rem;
+    padding-bottom:.5rem;
+    color:white;
+    
+
+} */
