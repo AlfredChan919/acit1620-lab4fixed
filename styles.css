@@ -70,33 +70,29 @@ footer{
 }
 h2{
     color:var(--baseblue);
-
+    transition: color 1s ease;
 }
 p{
     color:var(--teal);
+    transition: color 1s ease;
 }
 #topcontent{
     margin-top: 110px;
     
 }
+.content{
+    background-color: white;
+    padding:0;
+    transition:padding 1s, background-color 1s ease;
+}
 .content:hover{
     background-color:var(--shadeone);
-    padding:.3rem;
+    padding:.4rem;
     padding-bottom: 1rem;
-    color:white;
+    transition:background-color 1s, padding 1s, padding-bottom 1s ease;
 }
 
 .content:hover h2, .content:hover p{
     color:white;
+    transition: color 1s ease;
 }
-
-/* HOVER PARAGRAPHS STYLING*/
-/* span:hover{
-    background-color: var(--teal);
-    
-    padding-top: .5rem;
-    padding-bottom:.5rem;
-    color:white;
-    
-
-} */
