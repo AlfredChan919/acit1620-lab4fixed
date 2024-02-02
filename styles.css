@@ -17,9 +17,9 @@ body {
 
 }
 header{
-    background-color: rgb(1, 5, 5);
+    background-color: var(--teal);
     color: black;
-    padding: 1rem;
+    padding: 3rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -27,23 +27,44 @@ header{
     display:block;
 }
 .navbar{
+    padding:0;
     list-style-type: none;
     display:block;
     float:left;
     width:100%;
     margin-top: 1rem;
+    padding-left:.5rem;
     margin-bottom: 1rem;
     
 }
 .navItems{
     float:left;
-    padding-left:1rem;
-    padding-right: 1rem;
+    padding:1rem;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-left:.1rem;
+    margin-right:.1rem;
+    transform:scale(1);
+    box-shadow:none;
+    background-color:white;
+    transition:margin-top .3s, transform .3s, margin-left .3s, margin-right .3s, background-color .2s, box-shadow .2s ease;
 }
 footer{
     text-align:center;
     bottom:0;
     padding-top:1rem;
     border-top:1px solid black;
+    border-collapse: collapse;
     display:static;
+}
+.navItems:hover{
+    background-color:var(--teal);
+    margin-top:-10px;
+    transform: scale(1.2);
+    margin-left:.5rem;
+    margin-right:.5rem;
+    border: 1px solid black;
+    box-shadow: 0px 5px 8px gray;
+    color:white;
+    transition:margin-top .3s, transform .3s, margin-left .3s, margin-right .3s, box-shadow .2s, background-color .2s ease;
 }
