@@ -56,7 +56,6 @@ footer{
     padding-top:1rem;
     border-top:1px solid black;
     border-collapse: collapse;
-    display:static;
 }
 .navItems:hover{
     background-color:var(--shadeone);
